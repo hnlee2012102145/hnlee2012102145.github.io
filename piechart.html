@@ -1,0 +1,150 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>PieChartID18487a484827</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- PieChart generated in R 3.3.0 by googleVis 0.5.10 package -->
+<!-- Sat May 28 12:01:35 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataPieChartID18487a484827 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Afghanistan",
+637.0379443,
+60.02826829 
+],
+[
+ "Angola",
+3675.787412,
+51.86617073 
+],
+[
+ "Albania",
+3738.689799,
+77.64046341 
+],
+[
+ "United Arab Emirates",
+32507.0721,
+77.19563415 
+],
+[
+ "Argentina",
+12463.29847,
+75.98609756 
+],
+[
+ "Armenia",
+3380.962145,
+74.56136585 
+] 
+];
+data.addColumn('string','Country.Name');
+data.addColumn('number','Income');
+data.addColumn('number','lifeExp');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartPieChartID18487a484827() {
+var data = gvisDataPieChartID18487a484827();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Country Income";
+options["pieHole"] =    0.2;
+options["pieSliceText"] = "label";
+options["pieStartAngle"] =    100;
+options["width"] =    800;
+options["height"] =    700;
+options["slices"] = { 4: {offset: 0.4}};
+
+
+    var chart = new google.visualization.PieChart(
+    document.getElementById('PieChartID18487a484827')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartPieChartID18487a484827);
+})();
+function displayChartPieChartID18487a484827() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID18487a484827"></script>
+ 
+<!-- divChart -->
+  
+<div id="PieChartID18487a484827" 
+  style="width: 800; height: 700;">
+</div>
+ <div><span>Data: head(data) &#8226; Chart ID: <a href="Chart_PieChartID18487a484827.html">PieChartID18487a484827</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.3.0 (2016-05-03) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
