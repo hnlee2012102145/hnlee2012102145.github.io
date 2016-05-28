@@ -1,0 +1,207 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MotionChartID1848411a7f52</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- MotionChart generated in R 3.3.0 by googleVis 0.5.10 package -->
+<!-- Sat May 28 13:47:27 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataMotionChartID1848411a7f52 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "China",
+2013,
+5814.666,
+75.58515 
+],
+[
+ "Japan",
+2013,
+31850.81,
+83.33195 
+],
+[
+ "Korea, Rep.",
+2013,
+21104.45,
+81.70512 
+],
+[
+ "China",
+2008,
+2816.538,
+74.58327 
+],
+[
+ "Japan",
+2008,
+30890.82,
+82.58756 
+],
+[
+ "Korea, Rep.",
+2008,
+16705.61,
+79.83268 
+],
+[
+ "China",
+2003,
+1106.684,
+73.03312 
+],
+[
+ "Japan",
+2003,
+27461.79,
+81.76 
+],
+[
+ "Korea, Rep.",
+2003,
+11728.96,
+77.25024 
+],
+[
+ "China",
+1998,
+716.2114,
+70.89046 
+],
+[
+ "Japan",
+1998,
+25047.36,
+80.50146 
+],
+[
+ "Korea, Rep.",
+1998,
+6561.419,
+74.68024 
+],
+[
+ "China",
+1993,
+324.9522,
+69.50922 
+],
+[
+ "Japan",
+1993,
+28761.59,
+79.29366 
+],
+[
+ "Korea, Rep.",
+1993,
+7713.57,
+72.68195 
+] 
+];
+data.addColumn('string','Country.Name');
+data.addColumn('number','year');
+data.addColumn('number','Income');
+data.addColumn('number','lifeExp');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartMotionChartID1848411a7f52() {
+var data = gvisDataMotionChartID1848411a7f52();
+var options = {};
+options["width"] =    600;
+options["height"] =    500;
+options["state"] = "";
+
+
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartID1848411a7f52')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "motionchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMotionChartID1848411a7f52);
+})();
+function displayChartMotionChartID1848411a7f52() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1848411a7f52"></script>
+ 
+<!-- divChart -->
+  
+<div id="MotionChartID1848411a7f52" 
+  style="width: 600; height: 500;">
+</div>
+ <div><span>Data: X &#8226; Chart ID: <a href="Chart_MotionChartID1848411a7f52.html">MotionChartID1848411a7f52</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.3.0 (2016-05-03) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/motionchart">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
+
