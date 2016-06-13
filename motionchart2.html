@@ -3,7 +3,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>TableID184834845199</title>
+<title>MotionChartID1848411a7f52</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,15 +18,15 @@ body {
 </style>
 </head>
 <body>
- <!-- Table generated in R 3.3.0 by googleVis 0.5.10 package -->
-<!-- Sat May 28 13:58:23 2016 -->
+ <!-- MotionChart generated in R 3.3.0 by googleVis 0.5.10 package -->
+<!-- Sat May 28 13:47:27 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataTableID184834845199 () {
+function gvisDataMotionChartID1848411a7f52 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -130,15 +130,16 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartTableID184834845199() {
-var data = gvisDataTableID184834845199();
+function drawChartMotionChartID1848411a7f52() {
+var data = gvisDataMotionChartID1848411a7f52();
 var options = {};
-options["allowHtml"] = true;
-options["page"] = "enable";
+options["width"] =    600;
+options["height"] =    500;
+options["state"] = "";
 
 
-    var chart = new google.visualization.Table(
-    document.getElementById('TableID184834845199')
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartID1848411a7f52')
     );
     chart.draw(data,options);
     
@@ -150,7 +151,7 @@ options["page"] = "enable";
 (function() {
 var pkgs = window.__gvisPackages = window.__gvisPackages || [];
 var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-var chartid = "table";
+var chartid = "motionchart";
   
 // Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
 var i, newPackage = true;
@@ -162,9 +163,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartTableID184834845199);
+callbacks.push(drawChartMotionChartID1848411a7f52);
 })();
-function displayChartTableID184834845199() {
+function displayChartMotionChartID1848411a7f52() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -188,23 +189,23 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTableID184834845199"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1848411a7f52"></script>
  
 <!-- divChart -->
   
-<div id="TableID184834845199" 
-  style="width: automatic; height: automatic;">
+<div id="MotionChartID1848411a7f52" 
+  style="width: 600; height: 500;">
 </div>
- <div><span>Data: X &#8226; Chart ID: <a href="Chart_TableID184834845199.html">TableID184834845199</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: X &#8226; Chart ID: <a href="Chart_MotionChartID1848411a7f52.html">MotionChartID1848411a7f52</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.3.0 (2016-05-03) 
-  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/table">Documentation and Data Policy</a>
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/motionchart">Documentation and Data Policy</a>
 </span></div>
 <p></p>
-<div>주어진 데이터에서 한, 중, 일 데이터만 subset하여 1993년부터
-<p>2003년까지의 수입과 기대수명을 나타낸 테이블차트이다.</p>
-<p>동작도표에 이 데이터프레임이 쓰였다</p>
+<div>한국, 중국, 일본 데이터를 섭셋하여 시간에 따라 수입과 기대수명이 어떻게 변하는지를
+<p>나타내는 동작도표이다. 일본, 한국, 중국 순으로 수입과 기대수명이 높아지고 있다는 사실을 알 수 있다</p>
 </div>
 </body>
 </html>
+
